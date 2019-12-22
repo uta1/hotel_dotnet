@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNetCore.Http
+@model OrderData
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Заказ номера</h2>
+<form method="post" asp-action="OrderPost" asp-controller="Home">
+    <div asp-validation-summary="ModelOnly"></div>
+    
+    <div>
+        <label asp-for="Type"></label><br />
+        <input asp-for="Type" />
+        <span asp-validation-for="Type"></span>
+    </div>
+    
+    <h4>Дата заезда (в формате dd.mm.yy)</h4>
+    <input asp-for="From" type=“date” min="2019-01-01">
+    
+    <h4>Дата отъезда (в формате dd.mm.yy)</h4>
+    <input asp-for="To" type=“date” min="2019-01-01">
+    
+    <div>
+        <input type="submit" value="Добавить" />
+    </div>
+</form>

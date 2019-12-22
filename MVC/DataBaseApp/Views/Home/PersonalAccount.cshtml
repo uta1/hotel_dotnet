@@ -1,0 +1,51 @@
+﻿@using Microsoft.AspNetCore.Http
+@using Microsoft.EntityFrameworkCore
+@model PersonalAccountData
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Личный кабинет</h2>
+@{
+    if (Model.StatusCode != 0)
+    {
+        @Model.ErrorMessage
+    } else {
+        if (Model.User.Role == "Admin")
+        {
+            <li><a asp-area="" asp-controller="Home" asp-action="ListPeople">Список пользователей</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="ListRoomMeta">Список типов номеров</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="ListRoomInfo">Список номеров</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="ListOrders">Список заказов</a></li>
+            <br />
+            <li><a asp-controller="Home" asp-action="Create">Добавить нового пользователя</a></li>
+            <li><a asp-controller="Home" asp-action="CreateRoomMeta">Добавить новый тип номера</a></li>
+            <li><a asp-controller="Home" asp-action="CreateRoomInfo">Добавить новый номер</a></li>
+            <br />
+        }
+        <li><a asp-area="" asp-controller="Home" asp-action="Order">Сделать заказ</a></li>
+        
+        <span>Мои заказы:</span>
+        <table border="1">
+            
+            @foreach (var order in Model.GetOrders())
+            {
+            <tr>
+                <td>
+                    @order.From.ToString("dd.MM.yyyy")
+                </td>
+                <td>
+                    @order.To.ToString("dd.MM.yyyy")
+                </td>
+                <td>
+                    @order.GetTypeFromMeta(Model.db)
+                </td>
+            </tr>
+
+            }
+            
+        </table>
+    }
+}

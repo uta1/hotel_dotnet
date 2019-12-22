@@ -1,0 +1,19 @@
+﻿@using Microsoft.AspNetCore.Http
+@model OrderPostData
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Заказ номера</h2>
+
+@{
+    if (!Model.IsSuccessful()) {
+        <td>@Model.ErrorMessage</td>
+    } else {
+        <td>Заказ успешно создан</td> <br />
+        <td>Стоимость: </td>
+        @Model.TotalPrice
+    }
+}

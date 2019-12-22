@@ -1,0 +1,17 @@
+﻿@using Microsoft.AspNetCore.Http
+@model AuthorizePostData
+
+@{
+    ViewBag.Title = "Авторизация";
+    Layout = "_Layout";
+}
+
+<h2>Авторизация</h2>
+
+@{
+    if (!Model.IsSuccessful()) {
+        <td>@Model.ErrorMessage</td>
+    } else {
+        <td>Авторизация прошла успешно.</td> <a asp-area="" asp-controller="Home" asp-action="Index">Ссылка</a> <td>на главную.</td>
+    }
+}

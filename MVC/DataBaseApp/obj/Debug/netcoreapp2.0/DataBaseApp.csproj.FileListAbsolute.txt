@@ -1,0 +1,14 @@
+C:\Users\Юрий\net-kis\MVC\DataBaseApp\bin\Debug\netcoreapp2.0\appsettings.Development.json
+C:\Users\Юрий\net-kis\MVC\DataBaseApp\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\Юрий\net-kis\MVC\DataBaseApp\bin\Debug\netcoreapp2.0\bundleconfig.json
+C:\Users\Юрий\net-kis\MVC\DataBaseApp\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+C:\Users\Юрий\net-kis\MVC\DataBaseApp\bin\Debug\netcoreapp2.0\DataBaseApp.deps.json
+C:\Users\Юрий\net-kis\MVC\DataBaseApp\bin\Debug\netcoreapp2.0\DataBaseApp.runtimeconfig.json
+C:\Users\Юрий\net-kis\MVC\DataBaseApp\bin\Debug\netcoreapp2.0\DataBaseApp.runtimeconfig.dev.json
+C:\Users\Юрий\net-kis\MVC\DataBaseApp\bin\Debug\netcoreapp2.0\DataBaseApp.dll
+C:\Users\Юрий\net-kis\MVC\DataBaseApp\bin\Debug\netcoreapp2.0\DataBaseApp.pdb
+C:\Users\Юрий\net-kis\MVC\DataBaseApp\obj\Debug\netcoreapp2.0\DataBaseApp.csprojAssemblyReference.cache
+C:\Users\Юрий\net-kis\MVC\DataBaseApp\obj\Debug\netcoreapp2.0\DataBaseApp.AssemblyInfoInputs.cache
+C:\Users\Юрий\net-kis\MVC\DataBaseApp\obj\Debug\netcoreapp2.0\DataBaseApp.AssemblyInfo.cs
+C:\Users\Юрий\net-kis\MVC\DataBaseApp\obj\Debug\netcoreapp2.0\DataBaseApp.dll
+C:\Users\Юрий\net-kis\MVC\DataBaseApp\obj\Debug\netcoreapp2.0\DataBaseApp.pdb

@@ -1,0 +1,22 @@
+﻿@model RoomMeta
+@{
+    ViewData["Title"] = "Create RoomMeta";
+}
+
+<h2>Добавление типа номера</h2>
+<form method="post" asp-action="CreateRoomMeta" asp-controller="Home">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label asp-for="Name"></label><br />
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div>
+        <label asp-for="Price"></label><br />
+        <input asp-for="Price" />
+        <span asp-validation-for="Price"></span>
+    </div>
+    <div>
+        <input type="submit" value="Добавить" />
+    </div>
+</form>

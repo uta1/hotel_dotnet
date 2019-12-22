@@ -1,0 +1,17 @@
+﻿@model RoomInfo
+@{
+    ViewData["Title"] = "Create RoomInfo";
+}
+
+<h2>Добавление номера</h2>
+<form method="post" asp-action="CreateRoomInfo" asp-controller="Home">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label asp-for="Type"></label><br />
+        <input asp-for="Type" />
+        <span asp-validation-for="Type"></span>
+    </div>
+    <div>
+        <input type="submit" value="Добавить" />
+    </div>
+</form>

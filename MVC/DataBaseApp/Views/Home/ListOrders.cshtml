@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Order>
+@{
+    ViewData["Title"] = "List room meta";
+}
+
+<h2>Список типов комнат:</h2>
+
+<table class="table-condensed" >
+    <tr><th>OrderId</th><th>UserId</th><th>Дата заезда</th><th>Дата отъезда</th><th>Id комнаты</th></tr>
+    @foreach(var data in Model)
+    {
+        <tr><td>@data.OrderId</td><td>@data.UserId</td><td>@data.From</td><td>@data.To</td><td>@data.RoomId</td></tr>
+    }
+</table>
